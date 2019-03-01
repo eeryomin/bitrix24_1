@@ -1,23 +1,17 @@
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
-  <title>Тестовое</title>
-  <script>
-   function hi() {
-    console.log("aaa");
-   }
-  </script>
-  
+  <title>Тестовое</title> 
 </head>
 <body>
-  <form action="action.php" method="post">
+  <form action="action.php" method="get">
     <p>Имя: <input type="text" name="name" required/></p>
 	<p>Фамилия: <input type="text" name="surname" /></p>
     <p>E-mail: <input type="email" pattern="^[-._a-z0-9]+@(?:[a-z0-9][-a-z0-9]+\.)+[a-z]{2,6}$" name="email" /></p>
 	<p>Текст сообщения:</p>	
 	<textarea name="text" style="width: 500px;height: 100px"></textarea>
 	
-    <p><input type="submit" value="Отправить" onclick="hi()" /></p>
+    <p><input type="submit" value="Отправить" /></p>
   </form>
 </body>
 </html>
